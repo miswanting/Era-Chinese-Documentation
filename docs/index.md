@@ -20,8 +20,6 @@ features:
 footer: GPL-3.0+ Licensed | Copyright © 2021-Present Miswanting：：
 ---
 
-[![Deploy GitHub Pages](https://github.com/miswanting/Era-Chinese-Documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/miswanting/Era-Chinese-Documentation/actions/workflows/deploy.yml)
-
 ::: warning 提示
 
 本文档正在**加急**制作中。
@@ -29,6 +27,8 @@ footer: GPL-3.0+ Licensed | Copyright © 2021-Present Miswanting：：
 :::
 
 # 项目进度
+
+[![Deploy GitHub Pages](https://github.com/miswanting/Era-Chinese-Documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/miswanting/Era-Chinese-Documentation/actions/workflows/deploy.yml)
 
 ## 第一步：翻译部分
 
