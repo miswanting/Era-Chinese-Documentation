@@ -22,6 +22,10 @@ module.exports = {
         link: '/development/',
       },
       {
+        text: '生态',
+        link: '/ecosystem/',
+      },
+      {
         text: '贡献',
         link: '/contribute/',
       },
