@@ -1,1 +1,0 @@
-import{o as e,c as o,a as p}from"./app.da0bf9b3.js";const t='{"title":"调试命令","description":"","frontmatter":{},"relativePath":"translation/Debug_Command.md","lastUpdated":1631331216994}',a={},r=[p('',18)];a.render=function(p,t,a,i,n,d){return e(),o("div",null,r)};export{t as __pageData,a as default};
