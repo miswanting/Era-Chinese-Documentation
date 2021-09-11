@@ -1,1 +1,0 @@
-import{o as e,c as o,a as p}from"./app.03040bee.js";const t='{"title":"调试命令","description":"","frontmatter":{"sidebar":false},"relativePath":"translation/Debug_Command.md","lastUpdated":1631343098362}',a={},r=[p('',18)];a.render=function(p,t,a,i,n,d){return e(),o("div",null,r)};export{t as __pageData,a as default};

@@ -1,0 +1,1 @@
+import{o as a,c as t,a as e}from"./app.03040bee.js";const r='{"title":"指南目录","description":"","frontmatter":{},"relativePath":"guide/index.md","lastUpdated":1631343238697}',i={},l=[e('',2)];i.render=function(e,r,i,d,o,_){return a(),t("div",null,l)};export{r as __pageData,i as default};
