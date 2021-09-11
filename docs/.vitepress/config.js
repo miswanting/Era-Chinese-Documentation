@@ -21,6 +21,10 @@ module.exports = {
         text: '开发',
         link: '/development/',
       },
+      {
+        text: '贡献',
+        link: '/contribute/',
+      },
     ],
     sidebar: {
       '/1/': [
