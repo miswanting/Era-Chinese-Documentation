@@ -1,0 +1,1 @@
+import{o as i,c as l,a as e}from"./app.03040bee.js";const p='{"title":"文档标准","description":"","frontmatter":{"sidebar":false},"relativePath":"contribute/Documentation_Standard.md","lastUpdated":1631343315239}',d={},a=[e('',2)];d.render=function(e,p,d,o,t,r){return i(),l("div",null,a)};export{p as __pageData,d as default};
