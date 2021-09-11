@@ -47,8 +47,8 @@ footer: GPL-3.0+ Licensed | Copyright © 2021-Present Miswanting：：
    - :yellow_circle:`直译`[与 EraMaker 的差异](translation/Difference)
    - :yellow_circle:`直译`新增的扩展语法
      - :yellow_circle:`直译`[常规](translation/General)
-     - :black_circle:`直译`[运算符]()
-     - :black_circle:`直译`[常量与变量]()
+     - :yellow_circle:`直译`[运算符](translation/Operator)
+     - :yellow_circle:`直译`[常量与变量](translation/Variable)
      - :black_circle:`直译`[用户自定义变量]()
      - :black_circle:`直译`[命令]()
      - :black_circle:`直译`[函数与预处理器]()
