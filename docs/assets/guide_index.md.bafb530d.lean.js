@@ -1,0 +1,1 @@
+import{o as a,c as t,a as r}from"./app.1f302d32.js";const e='{"title":"指南目录","description":"","frontmatter":{},"relativePath":"guide/index.md","lastUpdated":1631367892258}',i={},l=[r('',2)];i.render=function(r,e,i,d,o,_){return a(),t("div",null,l)};export{e as __pageData,i as default};
