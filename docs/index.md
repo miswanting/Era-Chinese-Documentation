@@ -61,7 +61,7 @@ footer: GPL-3.0+ Licensed | Copyright © 2021-Present Miswanting：：
 ## 第二步：指南部分
 
 - :green_circle:`指南`[快速开始](guide/Quick_Start)
-- :yellow_circle:`指南`[入门教程](guide/tutorials)
+- :yellow_circle:`指南`[入门教程](guide/tutorials/)
 - :black_circle:`指南`MCS 代码风格介绍
 - :black_circle:`指南`Era 系列历史
 
