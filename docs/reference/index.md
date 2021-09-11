@@ -4,7 +4,9 @@
    1. [emuera.config](Config_File)
 2. CSV 文件
    1. [GameBase.csv](CSV_File)
-   2. [其他](CSV_File)
+   2. [Str.csv](CSV_File)
+   3. [CharaXX.csv](CSV_File)
+   4. [其他](CSV_File)
 3. ERB 文件
    1. [文件结构](ERB_Structure)
    2. [变量](ERB_Variables)
