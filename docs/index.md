@@ -40,9 +40,9 @@ footer: GPL-3.0+ Licensed | Copyright © 2021-Present Miswanting：：
 2. Emuera 部分
    - :green_circle:`直译`[术语表](translation/Glossary)
    - :green_circle:`直译`[调试命令](translation/Debug_Command)
-   - :yellow_circle:`直译`[调试模式](translation/Debug_Mode)
-   - :black_circle:`直译`[\_replace.csv]()
-   - :black_circle:`直译`[强制配置项目]()
+   - :green_circle:`直译`[调试模式](translation/Debug_Mode)
+   - :green_circle:`直译`[\_replace.csv](translation/Replace_CSV)
+   - :yellow_circle:`直译`[强制配置项目](translation/Config)
    - :black_circle:`直译`[程序流程]()
    - :black_circle:`直译`[与 EraMaker 的差异]()
    - :black_circle:`直译`[新增的扩展语法]()
