@@ -21,7 +21,7 @@ jobs:
       - name: Checkout Documentation Branch
         uses: actions/checkout@v2
         with:
-          ref: "page"
+          ref: "dev"
           path: "documentation"
       - name: Build Document
         run: |
