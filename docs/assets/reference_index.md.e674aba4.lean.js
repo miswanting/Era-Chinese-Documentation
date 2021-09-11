@@ -1,0 +1,1 @@
+import{o as l,c as e,a}from"./app.03040bee.js";const i='{"title":"参考目录","description":"","frontmatter":{},"relativePath":"reference/index.md","lastUpdated":1631350767173}',t={},r=[a('',2)];t.render=function(a,i,t,h,_,o){return l(),e("div",null,r)};export{i as __pageData,t as default};
