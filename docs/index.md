@@ -5,18 +5,18 @@ tagline: 做便捷至极的 Emuera + Eramaker + Erabasic 文档
 actionText: 快速开始
 actionLink: guide/Quick_Start
 features:
+  - title: 更简单
+    details: 学习曲线更加平滑的快速开始和入门教程，让上手更加简单。
+  - title: 更高效
+    details: 参考现代脚本文档重新组织文档结构。让使用者能够更快更精确地查找到需要的内容。
   - title: 更完善
     details: 本文档不仅含有 Eramaker 与 Emuera 的全部官方文档的翻译，还有额外的指南、参考等原创内容。
-  - title: 更易用
-    details: 参考现代脚本文档重新组织文档结构。并在日文文档的翻译部分也添加了大量示例代码。
   - title: 更深入
     details: 从最简单的 Emuera 游戏开始，一直深入到对 Eramaker 和 Emuera 的源代码分析。
+  - title: 更快速
+    details: 本文档的部署使用了最新的文档框架 Vitepress。在表现力、页面向导、编写和部署自动化方面都是及其便捷和敏捷的。能够为文档内容提供一流的支持。
   - title: 更通用
     details: 由于 Emuera 引擎本身设计定位存在特殊性，本文档在翻译与编写的时候进行了部分描述的脱敏。
-  - title: 更统一
-    details: 原文档由于历史原因，组织得比较松散。本文档除翻译部分外，对源文档结构进行了全局重构与聚合。
-  - title: 更高效
-    details: 本文档的部署使用了最新的文档框架 Vitepress。在表现力、编写和部署自动化都是及其便捷的。能够为文档内容提供一流的支持。
 footer: GPL-3.0+ Licensed | Copyright © 2021-Present Miswanting：：
 ---
 
