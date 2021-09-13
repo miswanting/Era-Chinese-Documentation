@@ -568,3 +568,76 @@ Emuera 不允许指派任务。
 |   NOITEM   |  整数  |  1   | :o:  |  :o:   | :o:  | `:0 = `<br />`GameBase.csv`<br />无Item |                    -                     |                    可以是0和1以外的其他值                    |
 
 下划线部分显示了 Eramaker 和 Emuera 规格之间的差异。
+
+### Emuera 的专用变量
+
+|        变量名         |  类型  | 维度 | 代入 | 可保存 | 禁用 |                   默认值                    |             初始化时机             |                             备注                             |
+| :-------------------: | :----: | :--: | :--: | :----: | :--: | :-----------------------------------------: | :--------------------------------: | :----------------------------------------------------------: |
+|         LOCAL         |  整数  |  1   | :o:  |  :x:   | :o:  |                      -                      |                 -                  |               #LOCALSIZE改变每个函数的元素数量               |
+|        LOCALS         | 字符串 |  1   | :o:  |  :x:   | :o:  |                      -                      |                 -                  |              #LOCALSSIZE改变每个函数的元素数量               |
+|          ARG          |  整数  |  1   | :o:  |  :x:   | :o:  |                    任意                     |         当该函数被调用时※          | ※只有当该参数被设置时<br/>每个函数只分配参数中定义的元素数量 |
+|         ARGS          | 字符串 |  1   | :o:  |  :x:   | :o:  |                    任意                     |         当该函数被调用时※          | ※只有当该参数被设置时<br/>每个函数只分配参数中定义的元素数量 |
+|       (Private)       |  任意  | 任意 | 任意 |  :x:   | :x:  |                    任意                     |  游戏开始<br />当该函数被调用时※   |  ※只有当该参数被设置为<br/>在一个函数中由#DIM或#DIMS定义的   |
+|        (Refer)        |  任意  | 任意 |  ※   |   ※    | :x:  |                      -                      |                 -                  |    ※取决于参考文献<br/>由函数中的#DIM REF或#DIMS REF 定义    |
+|      (Wide_area)      |  任意  | 任意 | 任意 |  任意  | :x:  |                    任意                     |              游戏开始              |                   由ERH中的#DIM或#DIMS定义                   |
+|        GLOBAL         |  整数  |  1   | :o:  |   ※    | :x:  |                      -                      |                 -                  | 用SAVEGLOBAL保存，用LOADGLOBAL加载。<br/>该元素可以由GLOBALNAME指定 |
+|        GLOBALS        | 字符串 |  1   | :o:  |   ※    | :x:  |                      -                      |                 -                  | 用SAVEGLOBAL保存，用LOADGLOBAL加载。<br/>GLOBALSNAME可以用来指定一个元素 |
+|       LINECOUNT       |  整数  |  0   | :x:  |  :x:   | :x:  |                      -                      |                 -                  |                              -                               |
+|       ISTIMEOUT       |  整数  |  0   | :x:  |  :x:   | :x:  |                      0                      |          TInput命令执行时          |               当一个TInput指令超时，1被分配。                |
+|     `__INT_MAX__`     |  整数  |  0   | :x:  |  :x:   | :x:  |             9223372036854775807             |                 -                  |                              -                               |
+|     `__INT_MIN__`     |  整数  |  0   | :x:  |  :x:   | :x:  |            -9223372036854775808             |                 -                  |                              -                               |
+|       RANDDATA        |  整数  |  1   | :o:  |  :o:   | :x:  |                      -                      |                 -                  |                              -                               |
+|         TSTR          | 字符串 |  1   | :o:  |  :x:   | :o:  |                 全空字符串                  |            BEGIN TRAIN             |                   该元素可以由TSTRNAME指定                   |
+|          DA           |  整数  |  2   | :o:  |  :o:   | :o:  |                      -                      |                 -                  |                              -                               |
+|          DB           |  整数  |  2   | :o:  |  :o:   | :o:  |                      -                      |                 -                  |                              -                               |
+|          DC           |  整数  |  2   | :o:  |  :o:   | :o:  |                      -                      |                 -                  |                              -                               |
+|          DD           |  整数  |  2   | :o:  |  :o:   | :o:  |                      -                      |                 -                  |                              -                               |
+|          DE           |  整数  |  2   | :o:  |  :o:   | :o:  |                      -                      |                 -                  |                              -                               |
+|       DITEMTYPE       |  整数  |  2   | :o:  |  :o:   | :o:  |                      -                      |                 -                  |                              -                               |
+|          TA           |  整数  |  3   | :o:  |  :o:   | :o:  |                      -                      |                 -                  |                              -                               |
+|          TB           |  整数  |  3   | :o:  |  :o:   | :o:  |                      -                      |                 -                  |                              -                               |
+|       NICKNAME        | 字符串 |  C0  | :o:  |  :o:   | :x:  |                      -                      |                 -                  |             在`CharaXX.csv`中以`あだ名,**`指定。             |
+|      MASTERNAME       | 字符串 |  C0  | :o:  |  :o:   | :x:  |                      -                      |                 --                 |          在`CharaXX.csv`中以`主人の呼び方,**`指定。          |
+|       DOWNBASE        |  整数  |  C1  | :o:  |  :o:   | :o:  |                    全为0                    |        @SHOW_USERCOM结束时         |                  元素可以通过BASENAME来指定                  |
+|          CUP          |  整数  |  C1  | :o:  |  :o:   | :o:  |                    全为0                    | @SHOW_USERCOM结束时<br />UPCHECK时 |                 元素可以通过PALAMNAME来指定                  |
+|         CDOWN         |  整数  |  C1  | :o:  |  :o:   | :o:  |                    全为0                    | @SHOW_USERCOM结束时<br />UPCHECK时 |                 元素可以通过PALAMNAME来指定                  |
+|         TCVAR         |  整数  |  C1  | :o:  |  :o:   | :o:  |                    全为0                    |            BEGIN TRAIN             |                 元素可以通过TCVARNAME来指定                  |
+|         CSTR          | 字符串 |  C1  | :o:  |  :o:   | :o:  |                      -                      |                 -                  | 用`CharaXX.csv`中的`CSTR,*,**`进行规范<br/>该元素可以由CSTRNAME指定 |
+|        CDFLAG         |  整数  |  C2  | :o:  |  :o:   | :o:  |                      -                      |                 -                  | 元素可由CFDLAGNAME1和CDFLAGNAME2指定<br/>注意，元素数量的默认值是1.1 |
+|       ITEMPRICE       |  整数  |  1   | :x:  |  :x:   | :o:  |                  Item.csv                   |                 -                  |               一个元素可以通过其ITEMNAME来指定               |
+|       TRAINNAME       | 字符串 |  1   | :x:  |  :x:   | :o:  |                  Train.csv                  |                 -                  |                              -                               |
+|       BASENAME        | 字符串 |  1   | :x:  |  :x:   | :o:  |                  Base.csv                   |                 -                  |                              -                               |
+|       EQUIPNAME       | 字符串 |  1   | :x:  |  :x:   | :o:  |                  Equip.csv                  |                 -                  |                              -                               |
+|      TEQUIPNAME       | 字符串 |  1   | :x:  |  :x:   | :o:  |                 TEquip.csv                  |                 -                  |                              -                               |
+|       STAINNAME       | 字符串 |  1   | :x:  |  :x:   | :o:  |                  Stain.csv                  |                 -                  |                              -                               |
+|        EXNAME         | 字符串 |  1   | :x:  |  :x:   | :o:  |                   EX.csv                    |                 -                  |                              -                               |
+|      SOURCENAME       | 字符串 |  1   | :x:  |  :x:   | :o:  |                 Source.csv                  |                 -                  |                              -                               |
+|       FLAGNAME        | 字符串 |  1   | :x:  |  :x:   | :o:  |                  Flag.csv                   |                 -                  |                              -                               |
+|       TFLAGNAME       | 字符串 |  1   | :x:  |  :x:   | :o:  |                  TFlag.csv                  |                 -                  |                              -                               |
+|       CFLAGNAME       | 字符串 |  1   | :x:  |  :x:   | :o:  |                  CFlag.csv                  |                 -                  |                              -                               |
+|       TCVARNAME       | 字符串 |  1   | :x:  |  :x:   | :o:  |                  TCVar.csv                  |                 -                  |                              -                               |
+|        STRNAME        | 字符串 |  1   | :x:  |  :x:   | :o:  |                 StrName.csv                 |                 -                  |         `Str.csv`指定的是STR的内容，而不是元素的名称         |
+|       TSTRNAME        | 字符串 |  1   | :x:  |  :x:   | :o:  |                  TEtr.csv                   |                 -                  |                              -                               |
+|       CSTRNAME        | 字符串 |  1   | :x:  |  :x:   | :o:  |                  CStr.csv                   |                 -                  |                              -                               |
+|      SAVESTRNAME      | 字符串 |  1   | :x:  |  :x:   | :o:  |                 SaveStr.csv                 |                 -                  |                              -                               |
+|      CDFLAGNAME1      | 字符串 |  1   | :x:  |  :x:   | :o:  |                 CdFlag1.csv                 |                 -                  |                              -                               |
+|      CDFLAGNAME2      | 字符串 |  1   | :x:  |  :x:   | :o:  |                 CdFlag2.csv                 |                 -                  |                              -                               |
+|      GLOBALNAME       | 字符串 |  1   | :x:  |  :x:   | :o:  |                 Global.csv                  |                 -                  |                              -                               |
+|      GLOBALSNAME      | 字符串 |  1   | :x:  |  :x:   | :o:  |                 Globals.csv                 |                 -                  |                              -                               |
+|    GAMEBASE_AUTHOR    | 字符串 |  0   | :x:  |  :x:   | :x:  |           GameBase.csv<br />作者            |                 -                  |                              -                               |
+|     GAMEBASE_INFO     | 字符串 |  0   | :x:  |  :x:   | :x:  |         GameBase.csv<br />追加情報          |                 -                  |                              -                               |
+|     GAMEBASE_YEAR     | 字符串 |  0   | :x:  |  :x:   | :x:  |          GameBase.csv<br />製作年           |                 -                  |                              -                               |
+|    GAMEBASE_TITLE     | 字符串 |  0   | :x:  |  :x:   | :x:  |         GameBase.csv<br />タイトル          |                 -                  |                              -                               |
+|   GAMEBASE_GAMECODE   |  整数  |  0   | :x:  |  :x:   | :x:  |          GameBase.csv<br />コード           |                 -                  |                              -                               |
+|   GAMEBASE_VERSION    |  整数  |  0   | :x:  |  :x:   | :x:  |        GameBase.csv<br />バージョン         |                 -                  |                              -                               |
+| GAMEBASE_ALLOWVERSION |  整数  |  0   | :x:  |  :x:   | :x:  |   GameBase.csv<br />バージョン違い認める    |                 -                  |                              -                               |
+| GAMEBASE_DEFAULTCHARA |  整数  |  0   | :x:  |  :x:   | :x:  |    GameBase.csv<br />最初からいるキャラ     |                 -                  |                              -                               |
+|    GAMEBASE_NOITEM    |  整数  |  0   | :x:  |  :x:   | :x:  |       GameBase.csv<br />アイテムなし        |                 -                  |                              -                               |
+|     WINDOW_TITLE      | 字符串 |  0   | :o:  |  :x:   | :x:  | GameBase.csv<br />ウィンドウタイトル<br />※ |                 -                  | 如果没有，则由`タイトル`和`バージョン`生成。<br/>如果没有`タイトル`，则为`Emuera`。 |
+|      MONEYLABEL       | 字符串 |  0   | :x:  |  :x:   | :x:  |    `_replace.csv`<br />お金の単位<br />※    |                 -                  |                          默认为`$`                           |
+|      DRAWLINESTR      | 字符串 |  0   | :x:  |  :x:   | :x:  |   `_replace.csv`<br />DRAWLINE文字<br />※   |                 -                  |                       默认为`-`的重复                        |
+|   LASTLOAD_VERSION    |  整数  |  0   | :x:  |  :x:   | :x:  |                     -1                      |     游戏开始<br />RESETDATA时      |                      该值在加载时被更新                      |
+|      LASTLOAD_NO      |  整数  |  0   | :x:  |  :x:   | :x:  |                     -1                      |     游戏开始<br />RESETDATA时      |                      该值在加载时被更新                      |
+|     LASTLOAD_TEXT     | 字符串 |  0   | :x:  |  :x:   | :x:  |                  空字符串                   |     游戏开始<br />RESETDATA时      |                      该值在加载时被更新                      |
+|     SAVEDATA_TEXT     | 字符串 |  0   | :o:  |   ※    | :x:  |                     ※※                      |          @SAVEINFO开始时           |      ※保存为保存数据的标题<br />※※代表当前时间的字符串       |
+
