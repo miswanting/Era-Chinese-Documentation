@@ -54,7 +54,7 @@ footer: GPL-3.0+ Licensed | Copyright © 2021-Present Miswanting：：
      - :yellow_circle:`直译`[函数与预处理器](translation/Function_and_Preprocessor)
      - :yellow_circle:`直译`[表达式函数](translation/Expression)
      - :yellow_circle:`直译`[自定义表达式内函数](translation/Custom_Expression)
-     - :black_circle:`直译`[头文件]()
+     - :black_circle:`直译`[头文件](translation/Header_File)
      - :black_circle:`直译`[HTML_PRINT 相关]()
      - :black_circle:`直译`[资源]()
 
