@@ -10,7 +10,7 @@
 
 ::: warning 教程依赖
 
-本教程假设您已学习过[快速开始](../Quick_Start)。若您尚未学习过，我们强烈推荐您预先学习该教程。
+本教程假设您已学习过[快速开始](../Quick_Start)。若您尚未学习过，我们强烈推荐您首先学习相应教程。
 
 :::
 
@@ -38,14 +38,36 @@ Quit
 我们来尝试写一些不那么“直接”的东西，请将`System.erb`中的内容改为这样：
 
 ```basic
-@EVENTFIRST
-x = Hello World!
-Print x
+@EventFirst
+#DimS Const Text = "Hello World!"
+PrintV Text
 Quit
 ```
 
 运行！我们得到下列输出：
 
 ```
+Hello World!
 ```
 
+成功！
+
+但……为什么？
+
+我们现在突然遇到了几个不认识的代码以及几个不熟悉的用法。不过不用担心，我们分别看看：
+
+`@EventFirst`
+
+`#DimS`
+
+`Const`
+
+`Text`
+
+`=`
+
+`"Hello World!"`
+
+`PrintV`
+
+`Quit`
