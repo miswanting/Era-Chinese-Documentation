@@ -1,1 +1,0 @@
-import{o as e,c as a,a as o}from"./app.1f302d32.js";const p='{"title":"常量与变量","description":"","frontmatter":{},"headers":[{"level":2,"title":"前言与确认","slug":"前言与确认"}],"relativePath":"guide/tutorials/Variable.md","lastUpdated":1631724782084}',n={},t=[o('',26)];n.render=function(o,p,n,d,s,c){return e(),a("div",null,t)};export{p as __pageData,n as default};

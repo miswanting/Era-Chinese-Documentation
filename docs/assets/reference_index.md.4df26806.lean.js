@@ -1,0 +1,1 @@
+import{o as l,c as a,a as e}from"./app.1f302d32.js";const i='{"title":"参考目录","description":"","frontmatter":{},"relativePath":"reference/index.md","lastUpdated":1631800337274}',r={},t=[e('',2)];r.render=function(e,i,r,h,_,o){return l(),a("div",null,t)};export{i as __pageData,r as default};
