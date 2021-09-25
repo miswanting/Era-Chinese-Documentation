@@ -13,6 +13,7 @@
     "docs:serve": "yarn vitepress serve docs"
   },
   "devDependencies": {
+    "pug": "latest",
     "vitepress": "latest"
   }
 }
