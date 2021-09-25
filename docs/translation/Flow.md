@@ -4,13 +4,13 @@
 
 流程图是用DiagramDesigner创建的。
 
-数据文件在这里。
+数据文件在[这里]()。
 
-在以下描述中，除非另有说明，否则句子的主语是Emuera.exe。
+在以下描述中，除非另有说明，否则句子的主语是`Emuera.exe`。
 
 ## TITLE
 
-在启动和阅读`ERB`后，并在运行`BEGIN TITLE`后。
+在启动和读取`ERB`后，并在运行`BEGIN TITLE`后。
 
 如果`@SYSTEM_TITLE`被定义了，它就会被调用，其他的就不做了。
 

@@ -160,8 +160,8 @@ Now Loading
 
 ```basic
 @EventFirst
-Print Hello World!
-Quit
+  Print Hello World!
+  Quit
 ```
 
 保存文件后启动程序，看见程序正常输出：
