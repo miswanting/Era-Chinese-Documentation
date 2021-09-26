@@ -1,5 +1,4 @@
 <template lang="pug">
-h3 Print 命令选择辅助器
 div
   span 单行溢出：
   input#overflow1(type="radio", name="overflow", value="", v-model="overflow")
@@ -15,7 +14,7 @@ div
 div
   span 参数类型：
   input#type1(type="radio", name="type", value="", v-model="type")
-  label(for="type1") 直出
+  label(for="type1") 字符串
   input#type2(
     type="radio",
     name="type",
@@ -23,7 +22,7 @@ div
     v-model="type",
     :disabled="space !== ''"
   )
-  label(for="type2") 变量的值
+  label(for="type2") 数值表达式
   input#type3(
     type="radio",
     name="type",
@@ -79,7 +78,7 @@ div
     name="lineWait",
     value="L",
     v-model="lineWait",
-    :disabled="overflow === 'Single' || space !== 'Single'"
+    :disabled="overflow === 'Single' || space !== ''"
   )
   label(for="lineWait2") 只换行
   input#lineWait3(
@@ -87,7 +86,7 @@ div
     name="lineWait",
     value="W",
     v-model="lineWait",
-    :disabled="overflow === 'Single' || space !== 'Single'"
+    :disabled="overflow === 'Single' || space !== ''"
   )
   label(for="lineWait3") 换行后等待
 .language-
