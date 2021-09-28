@@ -1,3 +1,6 @@
+<script setup>
+import FlowTitle from './FlowTitle.vue'
+</script>
 # 流程图
 
 > 翻译自原文档：https://osdn.net/projects/emuera/wiki/flow
@@ -11,6 +14,8 @@
 ## TITLE
 
 在启动和读取`ERB`后，并在运行`BEGIN TITLE`后。
+
+<FlowTitle />
 
 如果`@SYSTEM_TITLE`被定义了，它就会被调用，其他的就不做了。
 
