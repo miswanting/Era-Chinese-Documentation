@@ -17,6 +17,8 @@ import FlowTitle from './FlowTitle.vue'
 
 <!-- <FlowTitle /> -->
 
+![](https://osdn.net/projects/emuera/wiki/flow/attach/title.gif)
+
 如果`@SYSTEM_TITLE`被定义了，它就会被调用，其他的就不做了。
 
 如果`@SYSTEM_TITLE`在没有`BEGIN`或`LOADDATA`指令的情况下被`RETURN`，就没有下一个操作要执行，错误终止。
@@ -43,11 +45,15 @@ import FlowTitle from './FlowTitle.vue'
 
 当在标题屏幕上选择了`[0]从头开始`，并且在执行了`BEGIN FIRST`之后。
 
+![](https://osdn.net/projects/emuera/wiki/flow/attach/first.gif)
+
 如果在`@EVENTFIRST`中没有执行`BEGIN`指令，就没有下一个要执行的进程，错误结束。
 
 ## SHOP
 
 在加载和运行`BEGIN SHOP`后。
+
+![](https://osdn.net/projects/emuera/wiki/flow/attach/shop.gif)
 
 如果在加载后，`@EVENTSHOP`未被处理。
 
@@ -71,6 +77,8 @@ import FlowTitle from './FlowTitle.vue'
 ## TRAIN
 
 在执行`BEGIN TRAIN`后。
+
+![](https://osdn.net/projects/emuera/wiki/flow/attach/train.gif)
 
 首先，一些变量会被初始化。
 
@@ -132,6 +140,8 @@ Emuera的`NEXTCOM`是为了重现旧代码的行为而实施的，包括上述�
 
 在执行了`BEGIN ABLUP`之后。
 
+![](https://osdn.net/projects/emuera/wiki/flow/attach/ablup.gif)
+
 调用`@SHOW_JUEL`和`@SHOW_ABLUP_SELECT`来请求输入。
 
 如果输入的范围是0-99，找到相应的`@ABLUP`。
@@ -152,17 +162,23 @@ Emuera的`NEXTCOM`是为了重现旧代码的行为而实施的，包括上述�
 
 在执行`BEGIN AFTERTRAIN`后。
 
+![](https://osdn.net/projects/emuera/wiki/flow/attach/aftertrain.gif)
+
 如果在`@EVENTEND`内没有执行`BEGIN`指令，就没有下一个进程可以执行，错误结束。
 
 ## TURNEND
 
 在执行了`@BEGIN TURNEND`之后。
 
+![](https://osdn.net/projects/emuera/wiki/flow/attach/turnend.gif)
+
 如果在`@EVENTTURNEND`内没有执行`BEGIN`指令，就没有下一个进程可以执行，错误结束。
 
 ## LOADGAME
 
 当执行`LOADGAME`指令时。
+
+![](https://osdn.net/projects/emuera/wiki/flow/attach/loadgame.gif)
 
 `BEGIN`指令包含`RETURN`指令，`BEGIN`下面的语句从不执行，但`LOADDATA`和`SAVEDATA`指令与`CALL`指令一样返回原处。
 
@@ -172,11 +188,15 @@ Emuera的`NEXTCOM`是为了重现旧代码的行为而实施的，包括上述�
 
 当`@SAVEGAME`指令被执行时。
 
+![](https://osdn.net/projects/emuera/wiki/flow/attach/savegame.gif)
+
 调用`@SAVEINFO`的时机是在实际写完之前。
 
 ## LOADDATAEND
 
 在`LOADGAME`中执行了`LOAD`后，在执行了`LOADDATA`指令后。
+
+![](https://osdn.net/projects/emuera/wiki/flow/attach/loaddataend1821.gif)
 
 当执行`LOAD`时，所有以前的状态，包括被调用的函数，都被擦除。
 
