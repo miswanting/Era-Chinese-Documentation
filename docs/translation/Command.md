@@ -1,6 +1,6 @@
-<script setup>
+<!-- <script setup>
 import PrintCommandChooser from './PrintCommandChooser.vue'
-</script>
+</script> -->
 # 命令
 
 > 翻译自原文档：https://osdn.net/projects/emuera/wiki/excom

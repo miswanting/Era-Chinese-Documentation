@@ -17,7 +17,7 @@ features:
     details: 本文档的部署使用了最新的文档框架 Vitepress。在表现力、页面向导、编写和部署自动化方面都是及其便捷和敏捷的。能够为文档内容提供一流的支持。
   - title: 更通用
     details: 由于 Emuera 引擎本身设计定位存在特殊性，本文档在翻译与编写的时候进行了部分描述的脱敏。
-footer: GPL-3.0+ Licensed | Copyright © 2021-Present Miswanting：：
+footer: GPL-3.0+ Licensed | Copyright © 2021-Present Miswanting.
 ---
 
 ::: warning 提示

@@ -29,7 +29,7 @@ jobs:
           yarn
           yarn run docs:build
           cd ..
-          mv documentation/docs/.vitepress/dist dist
+          mv documentation/docs/.vuepress/dist dist
           rm -r documentation
       - name: Try Delete Old Version
         continue-on-error: true
