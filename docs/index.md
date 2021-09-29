@@ -1,5 +1,6 @@
 ---
 home: true
+title: 首页
 heroText: Era 中文文档
 tagline: 做便捷至极的 Emuera + Eramaker + Erabasic 文档
 actionText: 快速开始
