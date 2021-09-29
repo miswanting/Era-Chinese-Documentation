@@ -1,1 +1,0 @@
-const e={key:"v-543d66e9",path:"/reference/ERB_Variables.html",title:"ERB 的变量",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],filePathRelative:"reference/ERB_Variables.md",git:{updatedTime:1632891521e3,contributors:[{name:"Miswanting",email:"ihex@foxmail.com",commits:1}]}};export{e as data};

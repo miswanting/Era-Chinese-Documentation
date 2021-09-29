@@ -1,0 +1,1 @@
+import{c as r,o as a,a as e,d as s}from"./app.4772d866.js";import{_ as o}from"./plugin-vue_export-helper.5a098b48.js";const t={},d={id:"erb-的表达式",tabindex:"-1"},n=[e("a",{class:"header-anchor",href:"#erb-的表达式","aria-hidden":"true"},"#",-1),s(" ERB 的表达式")];var i=o(t,[["render",function(e,s){return a(),r("h1",d,n)}]]);export{i as default};

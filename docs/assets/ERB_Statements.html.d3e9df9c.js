@@ -1,1 +1,0 @@
-import{c as r,o as a,a as e,d as s}from"./app.140fd78c.js";import{_ as o}from"./plugin-vue_export-helper.5a098b48.js";const t={},d={id:"erb-的语句",tabindex:"-1"},n=[e("a",{class:"header-anchor",href:"#erb-的语句","aria-hidden":"true"},"#",-1),s(" ERB 的语句")];var i=o(t,[["render",function(e,s){return a(),r("h1",d,n)}]]);export{i as default};
