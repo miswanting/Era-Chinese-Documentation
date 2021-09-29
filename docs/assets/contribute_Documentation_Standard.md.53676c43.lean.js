@@ -1,1 +1,0 @@
-import{_ as i,c as l,o as e,a as p}from"./app.0c072424.js";const d='{"title":"文档标准","description":"","frontmatter":{"sidebar":false},"relativePath":"contribute/Documentation_Standard.md","lastUpdated":1632846079639}',a={},o=[p('',2)];var t=i(a,[["render",function(i,p,d,a,t,r){return e(),l("div",null,o)}]]);export{d as __pageData,t as default};

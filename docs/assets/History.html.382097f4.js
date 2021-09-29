@@ -1,0 +1,1 @@
+const e={key:"v-ad4eb85e",path:"/guide/History.html",title:"Era 系列历史",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],filePathRelative:"guide/History.md",git:{updatedTime:1632891075e3,contributors:[{name:"Miswanting",email:"ihex@foxmail.com",commits:1}]}};export{e as data};

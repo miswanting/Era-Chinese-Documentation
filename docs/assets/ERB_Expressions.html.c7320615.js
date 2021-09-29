@@ -1,0 +1,1 @@
+const e={key:"v-c93a1776",path:"/reference/ERB_Expressions.html",title:"ERB 的表达式",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],filePathRelative:"reference/ERB_Expressions.md",git:{updatedTime:1632891075e3,contributors:[{name:"Miswanting",email:"ihex@foxmail.com",commits:1}]}};export{e as data};
