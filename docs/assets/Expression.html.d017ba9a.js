@@ -1,1 +1,0 @@
-import{c as e,o as r,a as t}from"./app.23a69cc4.js";import{_ as o}from"./plugin-vue_export-helper.5a098b48.js";const a={},p=[t("p",null,"翻译自原文档：https://osdn.net/projects/emuera/wiki/exmeth",-1)];var s=o(a,[["render",function(t,o){return r(),e("blockquote",null,p)}]]);export{s as default};
