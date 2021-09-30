@@ -1,6 +1,3 @@
----
-sidebar: false
----
 # 调试命令
 
 > 翻译自原文档：https://osdn.net/projects/emuera/wiki/debugcom

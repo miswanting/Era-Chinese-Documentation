@@ -1,3 +1,5 @@
+const { path } = require('@vuepress/utils')
+
 module.exports = {
   title: 'Era 中文文档',
   description: 'Eramaker + Emuera + Erabasic 中文文档',
@@ -43,5 +45,13 @@ module.exports = {
         { text: 'Filters' }
       ],
     },
-  }
+  },
+  plugins: [
+    [
+      '@vuepress/register-components',
+      {
+        componentsDir: path.resolve(__dirname, '../../src/components'),
+      }
+    ]
+  ]
 }

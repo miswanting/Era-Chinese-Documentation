@@ -2,9 +2,14 @@
 home: true
 title: 首页
 heroText: Era 中文文档
-tagline: 做便捷至极的 Emuera + Eramaker + Erabasic 文档
-actionText: 快速开始
-actionLink: guide/Quick_Start
+tagline: 做好用的的 Emuera + Eramaker + Erabasic 文档
+actions:
+  - text: 快速开始
+    link: /guides/Quick_Start
+    type: primary
+  - text: 了解更多
+    link: /guides/
+    type: secondary
 features:
   - title: 更简单
     details: 学习曲线更加平滑的快速开始和入门教程，让上手更加简单。
