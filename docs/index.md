@@ -5,10 +5,10 @@ heroText: Era 中文文档
 tagline: 做好用的的 Emuera + Eramaker + Erabasic 文档
 actions:
   - text: 快速开始
-    link: /guides/Quick_Start
+    link: /guide/Quick_Start
     type: primary
   - text: 了解更多
-    link: /guides/
+    link: /guide/
     type: secondary
 features:
   - title: 更简单
