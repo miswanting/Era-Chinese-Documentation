@@ -2,7 +2,7 @@
 home: true
 title: 首页
 heroText: Era 中文文档
-tagline: 做好用的的 Emuera + Eramaker + Erabasic 文档
+tagline: 做好用的 Emuera + Eramaker + Erabasic 文档
 actions:
   - text: 快速开始
     link: /guide/Quick_Start
