@@ -26,9 +26,12 @@ features:
 footer: GPL-3.0+ Licensed | Copyright © 2021-Present Miswanting
 ---
 
-::: warning 提示
+::: danger 提示
 
-本文档正在**加急**制作中。
+本文档已移动至新的域名：
+- 全球：https://miswanting.github.io/ecd/
+- 中国大陆镜像：https://miswanting.gitee.io/ecd/
+当前地址即将废弃。再重复一遍，当前地址即将废弃。
 
 :::
 
