@@ -29,8 +29,9 @@ footer: GPL-3.0+ Licensed | Copyright © 2021-Present Miswanting
 ::: danger 提示
 
 本文档已移动至新的域名：
-- 全球：https://miswanting.github.io/ecd/
-- 中国大陆镜像：https://miswanting.gitee.io/ecd/
+- 全球：[https://miswanting.github.io/ecd/](https://miswanting.github.io/ecd/)
+- 中国大陆地区镜像：[https://miswanting.gitee.io/ecd/](https://miswanting.gitee.io/ecd/)
+
 当前地址即将废弃。再重复一遍，当前地址即将废弃。
 
 :::
